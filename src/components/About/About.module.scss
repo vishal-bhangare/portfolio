@@ -1,4 +1,5 @@
 @import "../../common/variables.scss";
+
 .container {
   min-height: 100vh;
   width: 100vw;
@@ -93,6 +94,59 @@
       //     color: #fff;
       //   }
       // }
+    }
+    .skillsContainer {
+      .subtitle {
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 10px 0;
+        padding-top: 10px;
+        padding-top: 20px;
+      }
+      .skills {
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        flex-direction: row;
+
+        .CategoryName {
+          padding-top: 10px;
+          width: 30%;
+          font-size: 1.4rem;
+          border-top: 2px solid rgba(128, 128, 128, 0.735);
+          font-weight: 400;
+        }
+        .CategorySkills {
+          padding-top: 10px;
+          width: 70%;
+          .skill {
+            width: fit-content;
+            // line-height: 20px;
+            display: inline-block;
+            background: #4d4d4d85;
+            padding: 1px 8px;
+            border-radius: 6px;
+            margin: 0px 5px;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    .aboutContent {
+      .skillsContainer {
+        .skills {
+          flex-direction: column;
+          .CategoryName {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
