@@ -1,0 +1,98 @@
+@import "../../common/variables.scss";
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background: $background-secondary-alt;
+  padding: 10px;
+  padding-left: 10px;
+  padding: 1rem 2rem;
+  position: relative;
+
+  .title {
+    height: 64px;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  .title span {
+    position: relative;
+  }
+  .title > span::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background-color: $accent;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .aboutContent {
+    .about {
+      font-size: 1.5rem;
+      font-weight: 450;
+      margin-top: 1.5rem;
+    }
+    .linksContainer {
+      margin-top: 2rem;
+      .links {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        grid-template-rows: repeat(5, max-content);
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        background-color: rgba($accent, $alpha: 0.1);
+        padding: 5px;
+        border-radius: 4px;
+        .arrow {
+          grid-area: 1 / 1 / 2 / 2;
+        }
+        .linksTitle {
+          grid-area: 1 / 2 / 2 / 3;
+        }
+        .icons {
+          grid-area: 2 / 2 / 3 / 3;
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            color: $accent;
+          }
+          i {
+            font-size: 1.3rem;
+            padding-right: 10px;
+          }
+          svg {
+            width: 1.3rem;
+            fill: #fff;
+          }
+          svg:hover {
+            path {
+              fill: $accent;
+            }
+          }
+        }
+      }
+      // .icons {
+      //   padding-left: 10px;
+      //   color: #fff;
+      //   a {
+      //     color: #fff;
+      //     text-decoration: none;
+      //   }
+      //   a:hover {
+      //     text-decoration: underline;
+      //     color: #fff;
+      //   }
+      // }
+    }
+  }
+}
