@@ -6,6 +6,7 @@
   position: relative;
   padding: 0 2rem;
   background-color: $background-secondary-alt;
+
   .title {
     height: 64px;
     line-height: 64px;
@@ -61,7 +62,7 @@
       flex-wrap: wrap;
       width: 100%;
       gap: 20px;
-      padding: 1.5rem;
+      padding: 3rem 5rem;
       background-color: rgba(255, 255, 255, 0.08);
       color: $foreground-primary;
       row-gap: 15px;
@@ -112,6 +113,7 @@
         width: 100%;
       }
       .contact {
+        padding: 1.5rem;
         .name,
         .email {
           width: 100%;

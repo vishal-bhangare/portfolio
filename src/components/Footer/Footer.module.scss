@@ -1,0 +1,9 @@
+@import "../../common/variables.scss";
+
+.container {
+  width: 100%;
+  padding: 2px 4px;
+  background-color: $background-secondary-alt;
+  text-align: center;
+  border-bottom: 2px solid $accent;
+}
