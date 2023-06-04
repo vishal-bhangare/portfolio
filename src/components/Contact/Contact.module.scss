@@ -57,6 +57,11 @@
         color: #ffffff;
       }
     }
+    .callme {
+      .icon {
+        transform: rotate(-45deg);
+      }
+    }
     .contact {
       display: flex;
       flex-wrap: wrap;
@@ -93,12 +98,38 @@
         outline: none;
         border: none;
       }
+
       .submit {
         background-color: rgba($color: $accent, $alpha: 0.4);
         transition: all 0.3s ease-in-out 0s;
       }
       .submit:hover {
         background-color: rgba($color: $accent, $alpha: 0.6);
+      }
+      div {
+        display: none;
+      }
+      .successMsg,
+      .errorMsg {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        i {
+          margin: 0 10px;
+        }
+        animation: hideAnimation 5s forwards;
+        transition: all 0.3s ease-in-out 0s;
+        animation-fill-mode: forwards;
+      }
+      .waitMsg {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        animation: hideAnimation 300s forwards;
+        transition: all 0.3s ease-in-out 0s;
+        animation-fill-mode: forwards;
       }
     }
   }
@@ -120,5 +151,22 @@
         }
       }
     }
+  }
+}
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+  }
+  90% {
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    height: 0;
   }
 }
