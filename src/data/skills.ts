@@ -14,6 +14,7 @@ export const skills = [
     skills: [
       { name: "HTML", level: 85 },
       { name: "CSS", level: 60 },
+      { name: "Php", level: 60 },
       { name: "SCSS", level: 40 },
       { name: "Angular", level: 40 },
       { name: "React", level: 20 },

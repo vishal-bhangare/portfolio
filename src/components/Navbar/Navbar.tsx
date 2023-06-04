@@ -58,10 +58,20 @@ const Navbar = ({ activeLink, onChange }: Props) => {
               >
                 About
               </Link>
-              {/* <a className="nav-link">About</a> */}
             </li>
             <li className="nav-item">
-              <a className="nav-link">Projects</a>
+              <Link
+                to="#projects"
+                onClick={() => {
+                  setActiveLink("projects");
+                }}
+                className={
+                  "nav-link" + (activeLink == "projects" ? " active" : "")
+                }
+                smooth
+              >
+                Projects
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link">Contact</a>
@@ -117,7 +127,18 @@ const Navbar = ({ activeLink, onChange }: Props) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Projects</a>
+                <Link
+                  to="#projects"
+                  onClick={() => {
+                    setActiveLink("projects");
+                  }}
+                  className={
+                    "nav-link" + (activeLink == "projects" ? " active" : "")
+                  }
+                  smooth
+                >
+                  Projects
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link">Contact</a>

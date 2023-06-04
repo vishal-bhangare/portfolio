@@ -1,0 +1,121 @@
+@import "../../common/variables.scss";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 2rem;
+
+  .title {
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+
+    span {
+      position: relative;
+    }
+    span::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      bottom: -4px;
+      left: 0;
+      background-color: $accent;
+    }
+  }
+  .projects {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    row-gap: 10px;
+    .project {
+      width: 50%;
+      display: flex;
+      border-radius: 8px;
+      .image {
+        width: 50%;
+        display: inherit;
+        img {
+          width: 100%;
+          position: relative;
+          border-radius: 10px 0 0 10px;
+        }
+      }
+      .info {
+        width: 54%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        border-radius: 8px;
+        background: #000;
+        left: -4%;
+        position: relative;
+        overflow: hidden;
+        .name {
+          font-weight: 600;
+          color: violet;
+          font-size: 1.1rem;
+        }
+        .description {
+          font-size: 0.85rem;
+        }
+        .links {
+          font-size: 1rem;
+          display: flex;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          gap: 20px;
+          padding: 4px 10px;
+          background: rgba(0, 0, 0, 0.8);
+          border-radius: 8px;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5),
+            0px 0px 25px rgba(0, 0, 0, 0.8), 0px 0px 25px rgb(0, 0, 0);
+
+          .link {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            i {
+              font-size: 0.9rem;
+              margin: 0 4px;
+            }
+            .dot {
+              font-size: 0.5rem;
+              animation: fadeinout 3s infinite;
+            }
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .projects {
+      flex-direction: column;
+      .project {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -139,6 +139,12 @@
 @media (max-width: 768px) {
   .container {
     .aboutContent {
+      font-size: 1.4rem;
+      .linksContainer {
+        .links {
+          font-size: 0.8rem;
+        }
+      }
       .skillsContainer {
         .skills {
           flex-direction: column;

@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: end;
+  z-index: 1000;
 
   .nav-list {
     display: flex;
