@@ -11,7 +11,7 @@ const Projects = () => {
         {projectsData.map((project) => (
           <div className={styles.project} key={project.name}>
             <div className={styles.image}>
-              <img src={project.image} alt="" />
+              <img src={project.image} alt="loading..." />
             </div>
             <div className={styles.info}>
               <span className={styles.name}>{project.name}</span>
