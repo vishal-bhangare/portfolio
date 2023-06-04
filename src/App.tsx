@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import "./App.scss";
 import { useState } from "react";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
   const [activeLink, setActiveLinkName] = useState("home");
@@ -16,12 +17,13 @@ const App = () => {
       <Navbar
         activeLink={activeLink}
         onChange={(value: string) => setActiveLink(value)}
-      ></Navbar>
+      />
       <Home
         activeLink={activeLink}
         onChange={(value: string) => setActiveLink(value)}
-      ></Home>
-      <About></About>
+      />
+      <About />
+      <Projects />
     </BrowserRouter>
   );
 };

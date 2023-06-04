@@ -39,7 +39,7 @@ const About = () => {
               <span className={styles.linksTitle}>Follow me on :</span>
               <div className={styles.icons}>
                 {socialMediaLinks.map((link) => (
-                  <a href={link.url} target="_blank">
+                  <a href={link.url} target="_blank" key={link.name}>
                     {parse(link.icon)}
                   </a>
                 ))}
@@ -50,7 +50,7 @@ const About = () => {
               <span className={styles.linksTitle}>Some other profiles :</span>
               <div className={styles.icons}>
                 {otherProfiles.map((link) => (
-                  <a href={link.url} target="_blank">
+                  <a href={link.url} target="_blank" key={link.name}>
                     {parse(link.icon)}
                   </a>
                 ))}
@@ -60,14 +60,14 @@ const About = () => {
           <div className={styles.skillsContainer}>
             <div className={styles.subtitle}>Skills :</div>
             <div className={styles.Content}>
-              {skills.map((skill) => (
-                <div className={styles.skills}>
-                  <div className={styles.CategoryName}>
+              {skills.map((skill,index) => (
+                <div className={styles.skills} key={index}>
+                  <div className={styles.CategoryName} key={index} >
                     {skill.category} skills
                   </div>
-                  <div className={styles.CategorySkills}>
+                  <div className={styles.CategorySkills} key={skill.category}>
                     {skill.skills.map((s) => (
-                      <div className={styles.skill}>{s.name}</div>
+                      <div className={styles.skill} key={s.name}>{s.name}</div>
                     ))}
                   </div>
                 </div>
