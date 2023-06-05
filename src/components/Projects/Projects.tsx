@@ -1,5 +1,6 @@
 import styles from "./Projects.module.scss";
 import { Projects as projectsData } from "../../data/projects";
+import parse from "html-react-parser";
 
 const Projects = () => {
   return (
@@ -15,7 +16,9 @@ const Projects = () => {
             </div>
             <div className={styles.info}>
               <span className={styles.name}>{project.name}</span>
-              <span className={styles.description}>{project.description}</span>
+              <span className={styles.description}>
+                {parse(project.description)}
+              </span>
               <div className={styles.links}>
                 <div className={styles.link}>
                   <i className="fa-regular fa-code-branch"></i>

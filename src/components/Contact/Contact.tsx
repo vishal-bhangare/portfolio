@@ -9,7 +9,7 @@ const Contact = () => {
   function resetStatus() {
     setTimeout(() => {
       setStatus(100);
-    }, 300000);
+    }, 120000);
   }
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -118,9 +118,6 @@ const Contact = () => {
           </div>
           <div className={status == 201 ? styles.errorMsg : ""}>
             Try Again !!!
-          </div>
-          <div className={status == 500 ? styles.waitMsg : ""}>
-            Wait for 5 Minutes
           </div>
         </form>
       </div>
