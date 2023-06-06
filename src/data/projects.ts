@@ -24,7 +24,7 @@ export const Projects = [
       "I have created this notes app using <u>MEAN</u> stack. In this version i have used express api to operate data while in the first version of this project i have used dummy JSON server to store data",
     date: "April 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/notev2.png?wrap=1",
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/notev2.png?wrap=0",
     source: "https://github.com/vishal-bhangare/notesv2",
     live: "https://notesv2-by-vishal.web.app/",
   },
