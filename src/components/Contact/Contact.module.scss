@@ -101,11 +101,13 @@
       }
 
       .submit {
-        background-color: rgba($color: $accent, $alpha: 0.4);
-        transition: all 0.3s ease-in-out 0s;
+        color: #fff;
+        font-weight: 600;
+        background-color: rgba($color: $accent, $alpha: 0.9);
+        transition: all 0.2s ease-in-out 0s;
       }
       .submit:hover {
-        background-color: rgba($color: $accent, $alpha: 0.6);
+        background-color: rgba($color: $accent, $alpha: 0.7);
       }
       div {
         display: none;
@@ -154,6 +156,21 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    .content {
+      .location,
+      .email,
+      .callme {
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
 @keyframes hideAnimation {
   0% {
     opacity: 1;
