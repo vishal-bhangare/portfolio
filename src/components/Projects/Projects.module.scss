@@ -6,7 +6,8 @@
   position: relative;
   padding: 0 2rem;
   padding-bottom: 2rem;
-
+  background: $background-secondary-alt;
+  color: $foreground-primary;
   .title {
     height: 64px;
     line-height: 64px;
