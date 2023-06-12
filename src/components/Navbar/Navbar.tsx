@@ -18,7 +18,6 @@ const Navbar = ({ activeLink, onChange }: Props) => {
 
   function toggleMobileNav() {
     setIsMobileNavVisible(!isMobileNavVisible);
-    console.log(isMobileNavVisible);
   }
   const visibleBG = {
     background: "#111",
@@ -113,6 +112,7 @@ const Navbar = ({ activeLink, onChange }: Props) => {
                 <Link
                   to="#home"
                   onClick={() => {
+                    toggleMobileNav();
                     setActiveLink("home");
                   }}
                   className={
@@ -127,6 +127,7 @@ const Navbar = ({ activeLink, onChange }: Props) => {
                 <Link
                   to="#about"
                   onClick={() => {
+                    toggleMobileNav();
                     setActiveLink("about");
                   }}
                   className={
@@ -141,6 +142,7 @@ const Navbar = ({ activeLink, onChange }: Props) => {
                 <Link
                   to="#projects"
                   onClick={() => {
+                    toggleMobileNav();
                     setActiveLink("projects");
                   }}
                   className={
@@ -155,6 +157,7 @@ const Navbar = ({ activeLink, onChange }: Props) => {
                 <Link
                   to="#contact"
                   onClick={() => {
+                    toggleMobileNav();
                     setActiveLink("contact");
                   }}
                   className={
