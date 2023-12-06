@@ -19,6 +19,14 @@
 
     .name {
       color: $accent;
+      white-space: pre;
+      display: inline-block;
+      span {
+        display: inline-block;
+      }
+    }
+    .name:hover > span {
+      animation: wave-text 1s ease-in-out 10s;
     }
   }
 
@@ -41,5 +49,21 @@
   .view-more:hover {
     border: 2px solid $accent;
     color: $accent;
+  }
+}
+
+@keyframes wave-text {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  5% {
+    transform: translateY(-0.2rem);
+  }
+  75% {
+    transform: translateY(-0.2rem);
+  }
+  80% {
+    transform: translateY(0rem);
   }
 }
