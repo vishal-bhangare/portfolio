@@ -26,26 +26,44 @@
       }
     }
     .name:hover > span {
-      animation: wave-text 1s ease-in-out 10s;
+      animation: wave-text 1s ease-in-out infinite;
     }
   }
 
   .description {
     font-size: 1.5rem;
   }
-  .view-more {
-    font-size: 1rem;
-    background: transparent;
-    color: $foreground-primary;
-    border: 2px solid #313131;
-    border-radius: 4px;
-    padding: calc(0.5em - 1px) 1em;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
+  .actionBtns {
+    display: flex;
+    gap: 0.5rem;
+    .resume {
+      background-color: $accent;
+      color: $background-secondary-alt;
+      padding: calc(0.5em - 1px) 1em;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      transition: 0.3s ease-in-out;
+    }
+    .resume:hover {
+      background-color: rgba($color: $accent, $alpha: 0.7);
+      color: $background-primary;
+    }
+    .view-more {
+      font-size: 1rem;
+      background: transparent;
+      color: $foreground-primary;
+      border: 2px solid #313131;
+      border-radius: 4px;
+      padding: calc(0.5em - 1px) 1em;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+    }
   }
+
   .view-more:hover {
     border: 2px solid $accent;
     color: $accent;

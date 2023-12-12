@@ -38,16 +38,25 @@ const Home = ({ activeLink, onChange }: Props) => {
             .
           </h1>
           <p className={styles.description}>A Student and developer.</p>
-          <Link
-            to="#about"
-            className={styles["view-more"]}
-            onClick={() => {
-              setActiveLink("about");
-            }}
-            smooth
-          >
-            View More <span>→</span>
-          </Link>
+          <div className={styles.actionBtns}>
+            <Link
+              to="https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/resume_vishal_bhangare.pdf?wrap=1"
+              target="_blank"
+              className={styles.resume}
+            >
+              Resume
+            </Link>
+            <Link
+              to="#about"
+              className={styles["view-more"]}
+              onClick={() => {
+                setActiveLink("about");
+              }}
+              smooth
+            >
+              View More <span>→</span>
+            </Link>
+          </div>
         </div>
       </div>
     </>
