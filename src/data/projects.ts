@@ -2,12 +2,22 @@ export const Projects = [
   {
     name: "CardsGI",
     description:
-      "Designed and developed game using <u>MERN stack</u>,implement user authencation using <u>Google Auth</u>. see about section of game for more info",
+      "Designed and developed game using <u>MERN stack</u>. Implemented user authentication using Google Auth nd JWT. see about section of game for more info.",
     date: "Sep 2023",
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/cardsgi.jpg?wrap=0",
     source: "",
     live: "https://cardsgi.vercel.app/",
+  },
+  {
+    name: "Sepien",
+    description:
+      "Developed a ChatGPT replica using <u>NextJS</u> that allows users to engage with the AI model in real-time.<br>Teck used : NextJS, Supabase, Shadcn UI",
+    date: "Nov 2023",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/sapien.jpg?wrap=0",
+    source: "https://github.com/vishal-bhangare/sapien",
+    live: "https://sapien-beta.vercel.app/auth",
   },
   {
     name: "User Management System",
@@ -19,19 +29,19 @@ export const Projects = [
     source: "https://github.com/vishal-bhangare/User-Management-System",
     live: "https://ums-j5ct.onrender.com/hello",
   },
-  {
-    name: "Sapien",
+    {
+    name: "Contact Management System",
     description:
-      "Developed a ChatGPT replica using <u>NextJS</u> that allows users to engage with the AI model in real-time.<br>Teck used : NextJS, Supabase, Shadcn UI",
-    date: "Nov 2023",
+      "Developed API for contact management system using <u>NestJS</u>. created API endpoints for manage user account and each user's contacts. used <u>Postgres</u> to store data and <u>TypeORM</u> to manage the data. used <u>JWT</u> secure the endpoints.",
+    date: "Dec 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/sapien.jpg?wrap=0",
-    source: "https://github.com/vishal-bhangare/sapien",
-    live: "https://sapien-beta.vercel.app/auth",
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/cms-api.jpg?wrap=0",
+    source: "https://github.com/vishal-bhangare/cms-api",
+    live: "https://cms-api-95vd.onrender.com/",
   },
   {
     name: "Library Management System",
-    description: "I have created this notes app using <u>Java</u>",
+    description: "Created library management system using <u>Java</u>. Used netbeans inbuild UI Designer to design UI. <u>MySQL</u> is used to store the books, users, librarians and admins data.",
     date: "feb 2023",
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/lms.png?wrap=0",
@@ -39,8 +49,8 @@ export const Projects = [
     live: "",
   },
   {
-    name: "Attendance Management System",
-    description: "I have created this notes app using <u>HTML JS PHP</u>",
+    name: "StudPunch",
+    description: "Designed and developed attendance management system using <u>PHP</u>. It can be also used to manage recods of students and faculties.<br>Teck used : HTML, CSS, JavaScript, Php and jQuery",
     date: "March 2023",
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/ams.png?wrap=0",
@@ -51,7 +61,7 @@ export const Projects = [
   {
     name: "Notes V2",
     description:
-      "I have created this notes app using <u>MEAN</u> stack. In this version i have used express api to operate data while in the first version of this project i have used dummy JSON server to store data",
+      "Developed Notes taking web app using <u>Angular</u> in front-end and <u>Nodejs</u> and <u>Express.js</u> in back-end, <u>MongoDB</u> database used to store users data.",
     date: "April 2023",
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/notev2.png?wrap=0",
