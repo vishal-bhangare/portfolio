@@ -51,7 +51,7 @@ const Contact = () => {
             <i className={"fa-regular fa-location-dot "}></i>
           </div>
           <div className={styles.name}>Location</div>
-          <div className={styles.info}>Thane, India</div>
+          <div className={styles.info}>Kalyan, Maharashtra, India</div>
         </div>
         <div className={styles.email}>
           <div className={styles.icon}>
@@ -62,17 +62,19 @@ const Contact = () => {
             {ContactData.email}
           </a>
         </div>
-        <div className={styles.callme}>
-          <div className={styles.icon}>
-            <i className={"fa-regular fa-phone-volume "}></i>
+        {ContactData.phone && (
+          <div className={styles.callme}>
+            <div className={styles.icon}>
+              <i className={"fa-regular fa-phone-volume "}></i>
+            </div>
+            <div className={styles.name}>Call Me</div>
+            <a className={styles.info} href={"tel:" + ContactData.phone}>
+              {ContactData.phone.substring(0, 3) +
+                " " +
+                ContactData.phone.substring(3)}
+            </a>
           </div>
-          <div className={styles.name}>Call Me</div>
-          <a className={styles.info} href={"tel:" + ContactData.phone}>
-            {ContactData.phone.substring(0, 3) +
-              " " +
-              ContactData.phone.substring(3)}
-          </a>
-        </div>
+        )}
         <form ref={form} onSubmit={sendEmail} className={styles.contact}>
           <input
             type="text"
