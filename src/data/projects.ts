@@ -10,6 +10,26 @@ export const Projects = [
     live: "https://cardsgi.vercel.app/",
   },
   {
+    name: "RC-Hierarchy",
+    description:
+      "Published react component on NPM registry which basically draws hierarchical tree like data using Canvas API. Main goal of creating this project is to draw tree like data in compact form, it decreases horizontal space taken by drawing which improves User experience.",
+    date: "Jan 2024",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/rc-hierarchy.jpg?wrap=0",
+    source: "https://www.npmjs.com/package/rc-hierarchy",
+    live: "https://rc-hierarchy-demo.vercel.app/",
+  },
+  {
+    name: "Morningstall",
+    description:
+      "Designed and developed E-library using <u>MERN Stack</u>. Open source books are available to read and download. user need to signin to download book pdf",
+    date: "July 2024",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/monrningstall.jpg?wrap=0",
+    source: "https://github.com/vishal-bhangare/morningstall",
+    live: "https://morningstall.netlify.app/",
+  },
+  {
     name: "Sepien",
     description:
       "Developed a ChatGPT replica using <u>NextJS</u> that allows users to engage with the AI model in real-time.<br>Teck used : NextJS, Supabase, Shadcn UI",
@@ -20,16 +40,6 @@ export const Projects = [
     live: "https://sepien-beta.vercel.app/auth",
   },
   {
-    name: "User Management System",
-    description:
-      "Developed API for user management system using FastAPI in Python. Implemented user registeration and login using Firebase Auth.<br>Teck used : Python, FastAPI, Firebase Auth",
-    date: "Sep 2023",
-    image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/ums-api.jpg?wrap=0",
-    source: "https://github.com/vishal-bhangare/User-Management-System",
-    live: "https://ums-j5ct.onrender.com/hello",
-  },
-  {
     name: "Contact Management System",
     description:
       "Developed API for contact management system using <u>NestJS</u>. created API endpoints for manage user account and each user's contacts. used <u>Postgres</u> to store data and <u>TypeORM</u> to manage the data. used <u>JWT</u> secure the endpoints.",
@@ -37,17 +47,7 @@ export const Projects = [
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/cms-api.jpg?wrap=0",
     source: "https://github.com/vishal-bhangare/cms-api",
-    live: "https://cms-api-95vd.onrender.com/",
-  },
-  {
-    name: "Library Management System",
-    description:
-      "Created library management system using <u>Java</u>. Used netbeans inbuild UI Designer to design UI. <u>MySQL</u> is used to store the books, users, librarians and admins data.",
-    date: "feb 2023",
-    image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/lms.png?wrap=0",
-    source: "https://github.com/vishal-bhangare/LibraryManagementSystem",
-    live: "",
+    live: "https://cms-api-95vd.onrender.com/api-docs",
   },
   {
     name: "StudPunch",
@@ -71,6 +71,15 @@ export const Projects = [
     live: "https://notesv2-by-vishal.web.app/",
   },
   {
+    name: "xdoku",
+    description: "Created sudoku game using React.",
+    date: "Dec 2023",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/xdoku.jpg?wrap=0",
+    source: "https://github.com/vishal-bhangare/xdoku",
+    live: "https://xdoku.vercel.app/",
+  },
+  {
     name: "Titato",
     description:
       "Created tic tac toe game using javascript and tailwindcss.<br>It is single player game  you have play with computer/AI, you can choose difficulty level to play.",
@@ -79,5 +88,15 @@ export const Projects = [
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/titato.png?wrap=0",
     source: "https://github.com/vishal-bhangare/titato",
     live: "https://vishal-bhangare.github.io/titato/",
+  },
+  {
+    name: "Library Management System",
+    description:
+      "Created library management system using <u>Java</u>. Used netbeans inbuild UI Designer to design UI. <u>MySQL</u> is used to store the books, users, librarians and admins data.",
+    date: "feb 2023",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/lms.png?wrap=0",
+    source: "https://github.com/vishal-bhangare/LibraryManagementSystem",
+    live: "",
   },
 ];
