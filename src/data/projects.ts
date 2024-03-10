@@ -23,7 +23,7 @@ export const Projects = [
     name: "Morningstall",
     description:
       "Designed and developed E-library using <u>MERN Stack</u>. Open source books are available to read and download. user need to signin to download book pdf",
-    date: "July 2024",
+    date: "July 2023",
     image:
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/monrningstall.jpg?wrap=0",
     source: "https://github.com/vishal-bhangare/morningstall",
@@ -38,6 +38,16 @@ export const Projects = [
       "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/sapien.jpg?wrap=0",
     source: "https://github.com/vishal-bhangare/sapien",
     live: "https://sepien-beta.vercel.app/auth",
+  },
+  {
+    name: "Visual Cue",
+    description:
+      "Created visualization dashboard using <u>MERN Stack</u> and <u>ChartJS</u>. Provides insight into data using charts",
+    date: "Dec 2023",
+    image:
+      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/visual-cue.jpg?wrap=0",
+    source: "https://github.com/vishal-bhangare/visual-cue",
+    live: "https://visual-cue.netlify.app/",
   },
   {
     name: "Contact Management System",
