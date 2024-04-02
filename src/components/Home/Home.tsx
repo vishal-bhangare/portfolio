@@ -40,7 +40,7 @@ const Home = ({ activeLink, onChange }: Props) => {
           <p className={styles.description}>A Student and developer.</p>
           <div className={styles.actionBtns}>
             <Link
-              to="https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/resume_vishal_bhangare.pdf?wrap=1"
+              to="https://drive.google.com/file/d/1Qa3Dy1PLJPZAhslxFswKfn8zEdiEiSf0/view?usp=sharing"
               target="_blank"
               className={styles.resume}
             >

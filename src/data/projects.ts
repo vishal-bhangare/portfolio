@@ -5,7 +5,7 @@ export const Projects = [
       "Designed and developed game using <u>MERN stack</u>. Implemented user authentication using Google Auth nd JWT. see about section of game for more info.",
     date: "Sep 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/cardsgi.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/cardsgi.jpg",
     source: "",
     live: "https://cardsgi.vercel.app/",
   },
@@ -15,7 +15,7 @@ export const Projects = [
       "Published react component on NPM registry which basically draws hierarchical tree like data using Canvas API. Main goal of creating this project is to draw tree like data in compact form, it decreases horizontal space taken by drawing which improves User experience.",
     date: "Jan 2024",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/rc-hierarchy.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/rc-hierarchy.jpg",
     source: "https://www.npmjs.com/package/rc-hierarchy",
     live: "https://rc-hierarchy-demo.vercel.app/",
   },
@@ -25,7 +25,7 @@ export const Projects = [
       "Designed and developed E-library using <u>MERN Stack</u>. Open source books are available to read and download. user need to signin to download book pdf",
     date: "July 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/monrningstall.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/monrningstall.jpg",
     source: "https://github.com/vishal-bhangare/morningstall",
     live: "https://morningstall.netlify.app/",
   },
@@ -35,7 +35,7 @@ export const Projects = [
       "Developed a ChatGPT replica using <u>NextJS</u> that allows users to engage with the AI model in real-time.<br>Teck used : NextJS, Supabase, Shadcn UI",
     date: "Nov 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/sapien.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/sapien.jpg",
     source: "https://github.com/vishal-bhangare/sapien",
     live: "https://sepien-beta.vercel.app/auth",
   },
@@ -45,7 +45,7 @@ export const Projects = [
       "Created visualization dashboard using <u>MERN Stack</u> and <u>ChartJS</u>. Provides insight into data using charts",
     date: "Dec 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/visual-cue.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/visual-cue.jpg",
     source: "https://github.com/vishal-bhangare/visual-cue",
     live: "https://visual-cue.netlify.app/",
   },
@@ -55,7 +55,7 @@ export const Projects = [
       "Developed API for contact management system using <u>NestJS</u>. created API endpoints for manage user account and each user's contacts. used <u>Postgres</u> to store data and <u>TypeORM</u> to manage the data. used <u>JWT</u> secure the endpoints.",
     date: "Dec 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/cms-api.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/cms-api.jpg",
     source: "https://github.com/vishal-bhangare/cms-api",
     live: "https://cms-api-95vd.onrender.com/api-docs",
   },
@@ -65,7 +65,7 @@ export const Projects = [
       "Designed and developed attendance management system using <u>PHP</u>. It can be also used to manage recods of students and faculties.<br>Teck used : HTML, CSS, JavaScript, Php and jQuery",
     date: "March 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/ams.png?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/studpunch.png",
     source:
       "https://github.com/vishal-bhangare/Student-Attendance-Management-System",
     live: "https://studpunch.000webhostapp.com/",
@@ -76,7 +76,7 @@ export const Projects = [
       "Developed Notes taking web app using <u>Angular</u> in front-end and <u>Nodejs</u> and <u>Express.js</u> in back-end, <u>MongoDB</u> database used to store users data.",
     date: "April 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/notev2.png?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/notesv2.png",
     source: "https://github.com/vishal-bhangare/notesv2",
     live: "https://notesv2-by-vishal.web.app/",
   },
@@ -85,7 +85,7 @@ export const Projects = [
     description: "Created sudoku game using React.",
     date: "Dec 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/xdoku.jpg?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/xdoku.jpg",
     source: "https://github.com/vishal-bhangare/xdoku",
     live: "https://xdoku.vercel.app/",
   },
@@ -95,7 +95,7 @@ export const Projects = [
       "Created tic tac toe game using javascript and tailwindcss.<br>It is single player game  you have play with computer/AI, you can choose difficulty level to play.",
     date: "April 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/titato.png?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/titato.jpg",
     source: "https://github.com/vishal-bhangare/titato",
     live: "https://vishal-bhangare.github.io/titato/",
   },
@@ -105,7 +105,7 @@ export const Projects = [
       "Created library management system using <u>Java</u>. Used netbeans inbuild UI Designer to design UI. <u>MySQL</u> is used to store the books, users, librarians and admins data.",
     date: "feb 2023",
     image:
-      "https://link.storjshare.io/s/jvqr6ewpzhptfjsq5ntctchx2eqa/bucket0/portfolio/lms.png?wrap=0",
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/lms.png",
     source: "https://github.com/vishal-bhangare/LibraryManagementSystem",
     live: "",
   },
