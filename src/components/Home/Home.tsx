@@ -7,6 +7,9 @@ interface Props {
   onChange: (value: string) => void;
 }
 
+const RESUME_URL =
+  "https://drive.google.com/file/d/1m_2u77YhepuyxADG0Kc5udyDxm5Hszsh/view?usp=sharing";
+
 const Home = ({ activeLink, onChange }: Props) => {
   const nameCharsRefs = useRef<HTMLSpanElement[]>([]);
   function setActiveLink(name: string) {
@@ -39,11 +42,7 @@ const Home = ({ activeLink, onChange }: Props) => {
           </h1>
           <p className={styles.description}>A Student and developer.</p>
           <div className={styles.actionBtns}>
-            <Link
-              to="https://drive.google.com/file/d/1Qa3Dy1PLJPZAhslxFswKfn8zEdiEiSf0/view?usp=sharing"
-              target="_blank"
-              className={styles.resume}
-            >
+            <Link to={RESUME_URL} target="_blank" className={styles.resume}>
               Resume
             </Link>
             <Link
