@@ -8,7 +8,7 @@ interface Props {
 }
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1m_2u77YhepuyxADG0Kc5udyDxm5Hszsh/view?usp=sharing";
+  "https://drive.google.com/file/d/1yNFZIWv7YP1DUX_9jw88INQ59QLVQxE3/view?usp=sharing";
 
 const Home = ({ activeLink, onChange }: Props) => {
   const nameCharsRefs = useRef<HTMLSpanElement[]>([]);
