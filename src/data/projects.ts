@@ -10,6 +10,16 @@ export const Projects = [
     live: "https://cardsgi.vercel.app/",
   },
   {
+    name: "Exec",
+    description:
+      "Designed and developed a task management app/to-do list app, developed using <u>React Native</u>. I made it primarily for my own use case and to explore android development",
+    date: "Apr 2024",
+    image:
+      "https://exbnpyyha5wtlbh4.public.blob.vercel-storage.com/portfolio/exec.png",
+    source: "",
+    live: "https://www.linkedin.com/posts/vishal-bhangare_wrapped-up-another-project-a-task-management-activity-7180028717727899649-pIlD?utm_source=share&utm_medium=member_desktop",
+  },
+  {
     name: "RC-Hierarchy",
     description:
       "Published react component on NPM registry which basically draws hierarchical tree like data using Canvas API. Main goal of creating this project is to draw tree like data in compact form, it decreases horizontal space taken by drawing which improves User experience.",
