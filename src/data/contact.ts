@@ -1,4 +1,4 @@
 export const Contact = {
-  email: "vishalbhangare2@gmail.com",
+  email: "vishalbhangare@outlook.in",
   phone: "",
 };
