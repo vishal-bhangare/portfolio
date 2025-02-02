@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useMediaQuery from "../../common/useMediaQuery";
 import "./Navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
@@ -11,6 +11,7 @@ interface Props {
 const Navbar = ({ activeLink, onChange }: Props) => {
   const MQmatches = useMediaQuery("(min-width: 768px)");
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   // const [activeLink, setActiveLinkName] = useState("home");
   function setActiveLink(name: string) {
     onChange(name);
@@ -25,10 +26,32 @@ const Navbar = ({ activeLink, onChange }: Props) => {
   const inVisibleBG = {
     background: "transparent",
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    if (isMobileNavVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileNavVisible]);
+
   if (MQmatches) {
     return (
       <>
-        <div className="navbar-container">
+        <div className={`navbar-container ${isScrolled ? "scrolled" : ""}`}>
           <ul className="nav-list">
             <li className="nav-item ">
               <Link
@@ -95,7 +118,7 @@ const Navbar = ({ activeLink, onChange }: Props) => {
       <>
         <div className="mobile-navbar-container">
           <div
-            className="mobile-navbar"
+            className={`mobile-navbar ${isScrolled ? "scrolled" : ""}`}
             style={isMobileNavVisible ? visibleBG : inVisibleBG}
           >
             <i
@@ -106,7 +129,11 @@ const Navbar = ({ activeLink, onChange }: Props) => {
               onClick={toggleMobileNav}
             ></i>
           </div>
-          <div className={isMobileNavVisible ? "mobile-navbar-content" : ""}>
+          <div
+            className={`mobile-navbar-content ${
+              isMobileNavVisible ? "visible" : ""
+            } ${isScrolled ? "scrolled" : ""}`}
+          >
             <ul className="nav-list">
               <li className="nav-item ">
                 <Link
