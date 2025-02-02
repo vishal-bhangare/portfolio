@@ -3,6 +3,7 @@ import styles from "./About.module.scss";
 import { socialMediaLinks, otherProfiles } from "../../data/links";
 import { skills } from "../../data/skills";
 import parse from "html-react-parser";
+import { Contact as ContactData } from "../../data/contact";
 
 const About = () => {
   return (
@@ -30,7 +31,7 @@ const About = () => {
               <div className={styles.icons}>
                 <a href="mailto:vishalbhangare2@gmail.com">
                   <i className="fa-solid fa-envelope"></i>
-                  vishalbhangare2@gmail.com
+                  {ContactData.email}
                 </a>
               </div>
             </div>
@@ -60,14 +61,16 @@ const About = () => {
           <div className={styles.skillsContainer}>
             <div className={styles.subtitle}>Skills :</div>
             <div className={styles.Content}>
-              {skills.map((skill,index) => (
+              {skills.map((skill, index) => (
                 <div className={styles.skills} key={index}>
-                  <div className={styles.CategoryName} key={index} >
+                  <div className={styles.CategoryName} key={index}>
                     {skill.category} skills
                   </div>
                   <div className={styles.CategorySkills} key={skill.category}>
                     {skill.skills.map((s) => (
-                      <div className={styles.skill} key={s.name}>{s.name}</div>
+                      <div className={styles.skill} key={s.name}>
+                        {s.name}
+                      </div>
                     ))}
                   </div>
                 </div>
