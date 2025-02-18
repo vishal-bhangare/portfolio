@@ -2,9 +2,11 @@ import styles from "./Projects.module.scss";
 import { Projects as projectsData } from "../../data/projects";
 import parse from "html-react-parser";
 import { useState } from "react";
+import ImageGallery from "../ImageGallary/ImageGallery";
 
 const Projects = () => {
   const [viewAll, setViewAll] = useState(false);
+  const [selectedGallery, setSelectedGallery] = useState<string[] | null>(null);
   return (
     <>
       <div className={styles.container} id="projects">
@@ -16,12 +18,43 @@ const Projects = () => {
           style={{ height: viewAll ? "auto" : "420px" }}
         >
           {projectsData.map((project) => (
-            <div className={styles.project} key={project.name}>
-              <div className={styles.image}>
-                <img src={project.image} alt="loading..." />
+            <div
+              className={`${styles.project} ${
+                project.type === 1 ? styles.majorProject : ""
+              }`}
+              key={project.name}
+            >
+              <div
+                className={styles.image}
+                onClick={() => {
+                  if (project.demoImages?.length) {
+                    setSelectedGallery(project.demoImages);
+                  }
+                }}
+              >
+                {project.image ? (
+                  <img src={project.image} alt="loading..." />
+                ) : project.demoImages?.length ? (
+                  <div className={styles.imageOverlay}>
+                    <img src={project.demoImages[0]} alt="loading..." />
+                  </div>
+                ) : (
+                  <div className={styles.imageOverlay}>Click to View</div>
+                )}
+                {project.demoImages?.length && (
+                  <div className={styles.viewGallery}>
+                    <i className="fa-solid fa-images"></i>
+                  </div>
+                )}
               </div>
               <div className={styles.info}>
-                <span className={styles.name}>{project.name}</span>
+                <span
+                  className={`${styles.name} ${
+                    project.type === 1 ? styles.majorProject : ""
+                  }`}
+                >
+                  {project.name}
+                </span>
                 <span className={styles.description}>
                   {parse(project.description)}
                 </span>
@@ -68,6 +101,12 @@ const Projects = () => {
               Show Less
             </button>
           </div>
+        )}
+        {selectedGallery && (
+          <ImageGallery
+            images={selectedGallery}
+            onClose={() => setSelectedGallery(null)}
+          />
         )}
       </div>
     </>
